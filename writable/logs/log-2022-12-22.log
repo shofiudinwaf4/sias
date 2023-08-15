@@ -1,0 +1,576 @@
+CRITICAL - 2022-12-22 01:28:32 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2022-12-22 01:29:30 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2022-12-22 01:29:49 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2022-12-22 00:22:07 --> Undefined variable $menu
+in APPPATH\Views\admin\template.php on line 112.
+ 1 APPPATH\Views\admin\template.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menu', 'APPPATH\\Views\\admin\\template.php', 112)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/template', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(17): view('admin/template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 00:42:17 --> strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+in SYSTEMPATH\Debug\Toolbar.php on line 419.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated', 'SYSTEMPATH\\Debug\\Toolbar.php', 419)
+ 2 SYSTEMPATH\Debug\Toolbar.php(419): strpos(null, '<head>')
+ 3 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 4 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\Filters\Filters->run('login', 'after')
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 00:49:39 --> Invalid file: template.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template', [], true)
+ 3 APPPATH\Controllers\Jurusan.php(17): view('template', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 00:50:17 --> Invalid file: v_jurusan.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_jurusan.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_jurusan', [], true)
+ 3 APPPATH\Views\template_admin.php(177): view('v_jurusan')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 7 APPPATH\Controllers\Jurusan.php(17): view('template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 00:50:31 --> Invalid file: v_jurusan.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_jurusan.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_jurusan', [], true)
+ 3 APPPATH\Views\template_admin.php(177): view('v_jurusan')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 7 APPPATH\Controllers\Jurusan.php(17): view('template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 01:12:11 --> Undefined property: App\Controllers\Jurusan::$ModelJurusan
+in APPPATH\Controllers\Jurusan.php on line 23.
+ 1 APPPATH\Controllers\Jurusan.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Jurusan::$ModelJurusan', 'APPPATH\\Controllers\\Jurusan.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 01:15:30 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Jurusan.php(23): CodeIgniter\Model->__call('AllData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 01:15:41 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Jurusan.php(23): CodeIgniter\Model->__call('AllData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 01:18:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Jurusan.php(23): CodeIgniter\Model->__call('AllData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 01:21:45 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Jurusan.php(23): CodeIgniter\Model->__call('AllData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 02:01:51 --> Undefined variable $base_url
+in APPPATH\Views\jurusan\v_jurusan.php on line 7.
+ 1 APPPATH\Views\jurusan\v_jurusan.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\jurusan\\v_jurusan.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jurusan\\v_jurusan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jurusan/v_jurusan', [], true)
+ 5 APPPATH\Views\template_admin.php(177): view('jurusan/v_jurusan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 9 APPPATH\Controllers\Jurusan.php(25): view('template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 02:02:09 --> Undefined variable $base_url
+in APPPATH\Views\jurusan\v_jurusan.php on line 7.
+ 1 APPPATH\Views\jurusan\v_jurusan.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\jurusan\\v_jurusan.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jurusan\\v_jurusan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jurusan/v_jurusan', [], true)
+ 5 APPPATH\Views\template_admin.php(177): view('jurusan/v_jurusan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 9 APPPATH\Controllers\Jurusan.php(25): view('template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 02:02:30 --> Undefined variable $base_url
+in APPPATH\Views\jurusan\v_jurusan.php on line 7.
+ 1 APPPATH\Views\jurusan\v_jurusan.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\jurusan\\v_jurusan.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jurusan\\v_jurusan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jurusan/v_jurusan', [], true)
+ 5 APPPATH\Views\template_admin.php(177): view('jurusan/v_jurusan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 9 APPPATH\Controllers\Jurusan.php(25): view('template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 02:02:38 --> Undefined variable $base_url
+in APPPATH\Views\jurusan\v_jurusan.php on line 7.
+ 1 APPPATH\Views\jurusan\v_jurusan.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\jurusan\\v_jurusan.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jurusan\\v_jurusan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jurusan/v_jurusan', [], true)
+ 5 APPPATH\Views\template_admin.php(177): view('jurusan/v_jurusan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 9 APPPATH\Controllers\Jurusan.php(25): view('template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 02:03:32 --> Undefined variable $base_url
+in APPPATH\Views\jurusan\v_jurusan.php on line 7.
+ 1 APPPATH\Views\jurusan\v_jurusan.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\jurusan\\v_jurusan.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jurusan\\v_jurusan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jurusan/v_jurusan', [], true)
+ 5 APPPATH\Views\template_admin.php(177): view('jurusan/v_jurusan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 9 APPPATH\Controllers\Jurusan.php(25): view('template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 02:04:19 --> Undefined variable $base_url
+in APPPATH\Views\jurusan\v_jurusan.php on line 7.
+ 1 APPPATH\Views\jurusan\v_jurusan.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\jurusan\\v_jurusan.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jurusan\\v_jurusan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jurusan/v_jurusan', [], true)
+ 5 APPPATH\Views\template_admin.php(177): view('jurusan/v_jurusan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 9 APPPATH\Controllers\Jurusan.php(25): view('template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 03:49:44 --> strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+in SYSTEMPATH\Debug\Toolbar.php on line 419.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated', 'SYSTEMPATH\\Debug\\Toolbar.php', 419)
+ 2 SYSTEMPATH\Debug\Toolbar.php(419): strpos(null, '<head>')
+ 3 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 4 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\Filters\Filters->run('login', 'after')
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 03:53:58 --> strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+in SYSTEMPATH\Debug\Toolbar.php on line 419.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated', 'SYSTEMPATH\\Debug\\Toolbar.php', 419)
+ 2 SYSTEMPATH\Debug\Toolbar.php(419): strpos(null, '<head>')
+ 3 SYSTEMPATH\Filters\DebugToolbar.php(40): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse))
+ 4 SYSTEMPATH\Filters\Filters.php(196): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\RedirectResponse), null)
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\Filters\Filters->run('login', 'after')
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 04:16:24 --> Undefined variable $id
+in APPPATH\Views\jurusan\v_jurusan.php on line 47.
+ 1 APPPATH\Views\jurusan\v_jurusan.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Views\\jurusan\\v_jurusan.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jurusan\\v_jurusan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jurusan/v_jurusan', [], true)
+ 5 APPPATH\Views\template_admin.php(216): view('jurusan/v_jurusan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 9 APPPATH\Controllers\Jurusan.php(25): view('template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 04:17:08 --> mysqli_sql_exception: Unknown column 'id_jurusan2' in 'where clause' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sias\app\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-12-22 04:17:08 --> Unknown column 'id_jurusan2' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', [], false)
+ 5 APPPATH\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 04:23:49 --> mysqli_sql_exception: Unknown column 'id_jurusan2' in 'where clause' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sias\app\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-12-22 04:23:49 --> Unknown column 'id_jurusan2' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', [], false)
+ 5 APPPATH\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 04:25:15 --> mysqli_sql_exception: Unknown column 'id_jurusan2' in 'where clause' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sias\app\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-12-22 04:25:15 --> Unknown column 'id_jurusan2' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', [], false)
+ 5 APPPATH\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 04:26:08 --> mysqli_sql_exception: Unknown column 'id_jurusan2' in 'where clause' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sias\app\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-12-22 04:26:08 --> Unknown column 'id_jurusan2' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', [], false)
+ 5 APPPATH\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 04:27:05 --> mysqli_sql_exception: Unknown column 'id_jurusan2' in 'where clause' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sias\app\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-12-22 04:27:05 --> Unknown column 'id_jurusan2' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', [], false)
+ 5 APPPATH\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 04:31:37 --> mysqli_sql_exception: Unknown column 'id_jurusan2' in 'where clause' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sias\app\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-12-22 04:31:37 --> Unknown column 'id_jurusan2' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', [], false)
+ 5 APPPATH\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 04:33:25 --> mysqli_sql_exception: Unknown column 'id_jurusan2' in 'where clause' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sias\app\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-12-22 04:33:25 --> Unknown column 'id_jurusan2' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan2` IS NULL', [], false)
+ 5 APPPATH\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('2')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 04:36:40 --> mysqli_sql_exception: Unknown column 'id_jurusan1' in 'where clause' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sias\app\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('1')
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('1')
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-12-22 04:36:40 --> Unknown column 'id_jurusan1' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan1` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan1` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan1` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jurusan`
+WHERE `id_jurusan1` IS NULL', [], false)
+ 5 APPPATH\Models\ModelJurusan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Jurusan.php(81): App\Models\ModelJurusan->DetailData('1')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 04:40:01 --> Undefined array key "visimis"
+in APPPATH\Views\jurusan\v_edit.php on line 34.
+ 1 APPPATH\Views\jurusan\v_edit.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "visimis"', 'APPPATH\\Views\\jurusan\\v_edit.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jurusan\\v_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jurusan/v_edit', [], true)
+ 5 APPPATH\Views\template_admin.php(216): view('jurusan/v_edit')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 9 APPPATH\Controllers\Jurusan.php(83): view('template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->EditData('2')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 04:43:05 --> mysqli_sql_exception: Unknown column 'id_jurusan2' in 'where clause' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_jur...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jur...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jur...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jur...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelJurusan.php(28): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\sias\app\Controllers\Jurusan.php(111): App\Models\ModelJurusan->UpdateData(Array)
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('2')
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-12-22 04:43:05 --> Unknown column 'id_jurusan2' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_jurusan` SET `id_jurusan` = \'2\', `kode_jurusan` = \'J02\', `jurusan` = \'IPA\', `visimisi` = \'dfdfdfgdfgdfgdfgfdg\'
+WHERE `id_jurusan2` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jurusan` SET `id_jurusan` = \'2\', `kode_jurusan` = \'J02\', `jurusan` = \'IPA\', `visimisi` = \'dfdfdfgdfgdfgdfgfdg\'
+WHERE `id_jurusan2` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jurusan` SET `id_jurusan` = \'2\', `kode_jurusan` = \'J02\', `jurusan` = \'IPA\', `visimisi` = \'dfdfdfgdfgdfgdfgfdg\'
+WHERE `id_jurusan2` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jurusan` SET `id_jurusan` = :id_jurusan:, `kode_jurusan` = :kode_jurusan:, `jurusan` = :jurusan:, `visimisi` = :visimisi:
+WHERE `id_jurusan2` IS NULL', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(28): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Jurusan.php(111): App\Models\ModelJurusan->UpdateData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('2')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

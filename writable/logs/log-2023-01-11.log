@@ -1,0 +1,160 @@
+CRITICAL - 2023-01-11 12:23:25 --> Too few arguments to function App\Controllers\Setting::UpdateLogoHeader(), 0 passed in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Setting.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->UpdateLogoHeader()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-11 12:23:45 --> mysqli_sql_exception: Unknown column 'nama_file' in 'field list' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_sek...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_sek...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_sek...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_sek...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelSekolah.php(19): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\sias\app\Controllers\Setting.php(69): App\Models\ModelSekolah->UpdateData(Array)
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Setting->UpdateLogoHeader()
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-01-11 12:23:45 --> Unknown column 'nama_file' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_sekolah` SET `id_sekolah` = 1, `nama_file` = NULL, `logo_header` = \'1673414625_61eb98cc03888de6015f.png\'
+WHERE `id_sekolah` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_sekolah` SET `id_sekolah` = 1, `nama_file` = NULL, `logo_header` = \'1673414625_61eb98cc03888de6015f.png\'
+WHERE `id_sekolah` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_sekolah` SET `id_sekolah` = 1, `nama_file` = NULL, `logo_header` = \'1673414625_61eb98cc03888de6015f.png\'
+WHERE `id_sekolah` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_sekolah` SET `id_sekolah` = :id_sekolah.1:, `nama_file` = :nama_file:, `logo_header` = :logo_header:
+WHERE `id_sekolah` = :id_sekolah:', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(19): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Setting.php(69): App\Models\ModelSekolah->UpdateData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->UpdateLogoHeader()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-11 12:24:17 --> mysqli_sql_exception: Unknown column 'nama_file' in 'field list' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_sek...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_sek...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_sek...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_sek...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelSekolah.php(19): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\sias\app\Controllers\Setting.php(69): App\Models\ModelSekolah->UpdateData(Array)
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Setting->UpdateLogoHeader()
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-01-11 12:24:17 --> Unknown column 'nama_file' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_sekolah` SET `id_sekolah` = 1, `nama_file` = NULL, `logo_header` = \'1673414657_7114de0fa30afafe3adf.png\'
+WHERE `id_sekolah` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_sekolah` SET `id_sekolah` = 1, `nama_file` = NULL, `logo_header` = \'1673414657_7114de0fa30afafe3adf.png\'
+WHERE `id_sekolah` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_sekolah` SET `id_sekolah` = 1, `nama_file` = NULL, `logo_header` = \'1673414657_7114de0fa30afafe3adf.png\'
+WHERE `id_sekolah` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_sekolah` SET `id_sekolah` = :id_sekolah.1:, `nama_file` = :nama_file:, `logo_header` = :logo_header:
+WHERE `id_sekolah` = :id_sekolah:', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(19): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Setting.php(69): App\Models\ModelSekolah->UpdateData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->UpdateLogoHeader()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-11 12:28:13 --> mysqli_sql_exception: Unknown column 'nama_file' in 'field list' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_sek...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_sek...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_sek...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_sek...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelSekolah.php(19): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\sias\app\Controllers\Setting.php(69): App\Models\ModelSekolah->UpdateData(Array)
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Setting->UpdateLogoHeader()
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-01-11 12:28:13 --> Unknown column 'nama_file' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_sekolah` SET `id_sekolah` = 1, `nama_file` = NULL, `logo_header` = \'1673414893_1272e4740fd6f8a4879e.png\'
+WHERE `id_sekolah` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_sekolah` SET `id_sekolah` = 1, `nama_file` = NULL, `logo_header` = \'1673414893_1272e4740fd6f8a4879e.png\'
+WHERE `id_sekolah` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_sekolah` SET `id_sekolah` = 1, `nama_file` = NULL, `logo_header` = \'1673414893_1272e4740fd6f8a4879e.png\'
+WHERE `id_sekolah` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_sekolah` SET `id_sekolah` = :id_sekolah.1:, `nama_file` = :nama_file:, `logo_header` = :logo_header:
+WHERE `id_sekolah` = :id_sekolah:', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(19): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Setting.php(69): App\Models\ModelSekolah->UpdateData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->UpdateLogoHeader()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-11 12:28:48 --> mysqli_sql_exception: Unknown column 'nama_file' in 'field list' in C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_sek...', 0)
+#1 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_sek...')
+#2 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_sek...')
+#3 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_sek...', Array, false)
+#4 C:\xampp\htdocs\sias\app\Models\ModelSekolah.php(19): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\sias\app\Controllers\Setting.php(69): App\Models\ModelSekolah->UpdateData(Array)
+#6 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Setting->UpdateLogoHeader()
+#7 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+#8 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-01-11 12:28:48 --> Unknown column 'nama_file' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_sekolah` SET `id_sekolah` = 1, `nama_file` = NULL, `logo_header` = \'1673414928_31d4076890b5e0515ea8.png\'
+WHERE `id_sekolah` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_sekolah` SET `id_sekolah` = 1, `nama_file` = NULL, `logo_header` = \'1673414928_31d4076890b5e0515ea8.png\'
+WHERE `id_sekolah` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_sekolah` SET `id_sekolah` = 1, `nama_file` = NULL, `logo_header` = \'1673414928_31d4076890b5e0515ea8.png\'
+WHERE `id_sekolah` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_sekolah` SET `id_sekolah` = :id_sekolah.1:, `nama_file` = :nama_file:, `logo_header` = :logo_header:
+WHERE `id_sekolah` = :id_sekolah:', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(19): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Setting.php(69): App\Models\ModelSekolah->UpdateData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->UpdateLogoHeader()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-11 12:45:16 --> Unclosed '{' on line 13
+in APPPATH\Controllers\Setting.php on line 160.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Setting.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Setting')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Setting')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Setting', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-11 12:46:24 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\Setting.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->UpdateLogoSekolah()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-11 12:55:42 --> Undefined variable $head
+in APPPATH\Views\template_admin.php on line 10.
+ 1 APPPATH\Views\template_admin.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $head', 'APPPATH\\Views\\template_admin.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 5 APPPATH\Controllers\Setting.php(32): view('template_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->Logo()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
