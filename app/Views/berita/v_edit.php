@@ -19,6 +19,16 @@
                     <?= $validasi->getError('judul_berita'); ?></p>
             </div>
             <div class="form-group">
+                <label>Kategori</label>
+                <select class="form-control" name="kategori">
+                    <option value="">--Pilih Kategori--</option>
+                    <option value="berita" <?= $berita['kategori'] == 'berita' ? 'selected' : ''; ?>>Berita</option>
+                    <option value="prestasi" <?= $berita['kategori'] == 'prestasi' ? 'selected' : ''; ?>>Prestasi</option>
+                    <option value="kegiatan" <?= $berita['kategori'] == 'kegiatan' ? 'selected' : ''; ?>>Kegiatan</option>
+                </select>
+                <p class="text-danger"><?= $validasi->getError('kategori'); ?></p>
+            </div>
+            <div class="form-group">
                 <label>Isi Berita</label>
                 <textarea name="isi_berita" id="summernote" class="form-control" width="1000px"><?= $berita['isi_berita']; ?></textarea>
                 <p class="text-danger"><?= $validasi->getError('isi_berita'); ?></p>

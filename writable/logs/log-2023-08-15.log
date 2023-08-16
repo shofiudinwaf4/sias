@@ -1,0 +1,41 @@
+ERROR - 2023-08-15 14:39:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'sias', 3306, '', 0)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\sias\app\Models\ModelSlider.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\sias\app\Controllers\Home.php(31): App\Models\ModelSlider->AllData()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\project\sias\app\Models\ModelSlider.php(13): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\project\sias\app\Controllers\Home.php(31): App\Models\ModelSlider->AllData()
+#5 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#10 {main}
+CRITICAL - 2023-08-15 14:39:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_slider`', [], false)
+ 3 APPPATH\Models\ModelSlider.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(31): App\Models\ModelSlider->AllData()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

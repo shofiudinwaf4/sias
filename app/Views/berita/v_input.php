@@ -18,6 +18,16 @@
                     <?= $validasi->getError('judul_berita'); ?></p>
             </div>
             <div class="form-group">
+                <label>Kategori</label>
+                <select class="form-control" name="kategori">
+                    <option value="">--Pilih Kategori--</option>
+                    <option value="Berita">Berita</option>
+                    <option value="Prestasi">Prestasi</option>
+                    <option value="Kegiatan">Kegiatan</option>
+                </select>
+                <p class="text-danger"><?= $validasi->getError('kategori'); ?></p>
+            </div>
+            <div class="form-group">
                 <label>Isi Berita</label>
                 <textarea name="isi_berita" id="summernote" class="form-control" width="1000px" value="<?= old('isi_berita'); ?>"><?= old('isi_berita'); ?></textarea>
                 <p class="text-danger"><?= $validasi->getError('isi_berita'); ?></p>

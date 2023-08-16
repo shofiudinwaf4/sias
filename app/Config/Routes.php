@@ -46,7 +46,7 @@ $routes->get('home/download', 'Home::Download');
 $routes->get('home/sejarah', 'Home::Sejarah');
 $routes->get('home/visimisi', 'Home::Visimisi');
 $routes->get('home/sambutan', 'Home::Sambutan');
-// dashboard admin
+// dashboard
 $routes->get('dashboard', 'Dashboard::index');
 // jurusan
 $routes->get('jurusan', 'Jurusan::index');
@@ -66,10 +66,10 @@ $routes->add('ta/insertdata', 'Ta::InsertData');
 $routes->add('ta/updatedata/(:segment)', 'Ta::UpdateData/$1');
 $routes->get('ta/deletedata/(:segment)', 'Ta::DeleteData/$1');
 // mapel
-$routes->get('mapel', 'Setting::index');
-$routes->add('mapel/insertdata', 'Setting::InsertData');
-$routes->add('mapel/updatedata/(:segment)', 'Setting::UpdateData/$1');
-$routes->get('mapel/deletedata/(:segment)', 'Setting::DeleteData/$1');
+$routes->get('mapel', 'Mapel::index');
+$routes->add('mapel/insertdata', 'Mapel::InsertData');
+$routes->add('mapel/updatedata/(:segment)', 'Mapel::UpdateData/$1');
+$routes->get('mapel/deletedata/(:segment)', 'Mapel::DeleteData/$1');
 // guru
 $routes->get('user', 'User::index');
 $routes->get('user/input', 'User::Input');

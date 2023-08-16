@@ -32,6 +32,7 @@
                     <tr class="text-center bg-primary">
                         <th width="50px">No</th>
                         <th>Judul Berita</th>
+                        <th>Kategori</th>
                         <th>Gambar</th>
                         <th width="100px">Aksi</th>
                     </tr>
@@ -42,6 +43,7 @@
                         <tr>
                             <td class="text-center"><?= $no++; ?></td>
                             <td class="text-center"><?= $value['judul_berita']; ?></td>
+                            <td class="text-center"><?= $value['kategori']; ?></td>
                             <td><img src="<?= base_url('gambar/' . $value['gambar']); ?>" width="120px" height="100px"></td>
                             <td class="text-center">
                                 <div class="btn-group">

@@ -58,6 +58,13 @@ class Berita extends BaseController
                     'is_unique' => '{field} Berita ini sudah ada'
                 ]
             ],
+            'kategori' => [
+                'label' => 'Kategori',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Tidak boleh kosong',
+                ]
+            ],
             'isi_berita' => [
                 'label' => 'Isi Berita',
                 'rules' => 'required',
@@ -80,6 +87,7 @@ class Berita extends BaseController
             $data = [
                 'judul_berita' => $this->request->getPost('judul_berita'),
                 'slug_berita' => url_title($this->request->getPost('judul_berita'), '-', true),
+                'kategori' => $this->request->getPost('kategori'),
                 'isi_berita' => $this->request->getPost('isi_berita'),
                 'id_user' => session()->get('id_user'),
                 'tgl_berita' => date('y-m-d'),
@@ -118,6 +126,13 @@ class Berita extends BaseController
                     'required' => '{field} Tidak boleh kosong',
                 ]
             ],
+            'kategori' => [
+                'label' => 'Kategori',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Tidak boleh kosong',
+                ]
+            ],
             'isi_berita' => [
                 'label' => 'Isi Berita',
                 'rules' => 'required',
@@ -148,6 +163,7 @@ class Berita extends BaseController
                 $data = [
                     'id_berita' => $id_berita,
                     'isi_berita' => $this->request->getPost('isi_berita'),
+                    'kategori' => $this->request->getPost('kategori'),
                     'id_user' => session()->get('id_user'),
                     'gambar' => $nama_file,
                 ];
@@ -156,6 +172,7 @@ class Berita extends BaseController
                 $data = [
                     'id_berita' => $id_berita,
                     'judul_berita' => $this->request->getPost('judul_berita'),
+                    'kategori' => $this->request->getPost('kategori'),
                     'slug_berita' => url_title($this->request->getPost('judul_berita'), '-', true),
                     'isi_berita' => $this->request->getPost('isi_berita'),
                     'id_user' => session()->get('id_user'),

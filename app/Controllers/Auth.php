@@ -67,6 +67,19 @@ class Auth extends BaseController
                     session()->setFlashdata('pesan', 'Username atau Password salah');
                     return redirect()->to('login');
                 }
+            } elseif ($level == 2) {
+                $cek = $this->ModelAuth->LoginUser($username, $password);
+                if ($cek) {
+                    # code...
+                    session()->set('level', $cek['nama_user']);
+                    session()->set('id_user', $level);
+                    session()->set('foto', $cek['foto']);
+                    session()->set('nama_user', $cek['nama_user']);
+                    return redirect()->to('dashboardStaf');
+                } else {
+                    session()->setFlashdata('pesan', 'Username atau Password salah');
+                    return redirect()->to('login');
+                }
             } else {
                 return redirect()->to('login');
             }
