@@ -43,6 +43,7 @@ class Berita extends BaseController
             'subjudul' => 'Tambah Berita',
             'menu' => 'berita',
             'submenu' => 'berita',
+            'kategori' => $this->ModelBerita->Kategori(),
             'page' => 'berita/v_input'
         ];
         return view('template_admin', $data);
@@ -58,8 +59,8 @@ class Berita extends BaseController
                     'is_unique' => '{field} Berita ini sudah ada'
                 ]
             ],
-            'kategori' => [
-                'label' => 'Kategori',
+            'id_kategoriBerita' => [
+                'label' => 'kategori',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Tidak boleh kosong',
@@ -87,7 +88,7 @@ class Berita extends BaseController
             $data = [
                 'judul_berita' => $this->request->getPost('judul_berita'),
                 'slug_berita' => url_title($this->request->getPost('judul_berita'), '-', true),
-                'kategori' => $this->request->getPost('kategori'),
+                'id_kategoriBerita' => $this->request->getPost('id_kategoriBerita'),
                 'isi_berita' => $this->request->getPost('isi_berita'),
                 'id_user' => session()->get('id_user'),
                 'tgl_berita' => date('y-m-d'),
@@ -112,6 +113,7 @@ class Berita extends BaseController
             'menu' => 'Berita',
             'submenu' => 'Berita',
             'page' => 'berita/v_edit',
+            'kategori' => $this->ModelBerita->Kategori(),
             'berita' => $this->ModelBerita->DetailData($id_berita),
         ];
         return view('template_admin', $data);
@@ -126,8 +128,8 @@ class Berita extends BaseController
                     'required' => '{field} Tidak boleh kosong',
                 ]
             ],
-            'kategori' => [
-                'label' => 'Kategori',
+            'id_kategoriBerita' => [
+                'label' => 'kategori',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Tidak boleh kosong',
@@ -163,7 +165,7 @@ class Berita extends BaseController
                 $data = [
                     'id_berita' => $id_berita,
                     'isi_berita' => $this->request->getPost('isi_berita'),
-                    'kategori' => $this->request->getPost('kategori'),
+                    'id_kategoriBerita' => $this->request->getPost('id_kategoriBerita'),
                     'id_user' => session()->get('id_user'),
                     'gambar' => $nama_file,
                 ];
@@ -172,7 +174,7 @@ class Berita extends BaseController
                 $data = [
                     'id_berita' => $id_berita,
                     'judul_berita' => $this->request->getPost('judul_berita'),
-                    'kategori' => $this->request->getPost('kategori'),
+                    'id_kategoriBerita' => $this->request->getPost('id_kategoriBerita'),
                     'slug_berita' => url_title($this->request->getPost('judul_berita'), '-', true),
                     'isi_berita' => $this->request->getPost('isi_berita'),
                     'id_user' => session()->get('id_user'),
@@ -185,7 +187,7 @@ class Berita extends BaseController
 
             // jika valid
         } else {
-            return redirect()->to('berita/edit/' . $id_berita)->withInput();
+            return redirect()->to('berita/editdata/' . $id_berita)->withInput();
         }
     }
     public function DeleteData($id_berita)

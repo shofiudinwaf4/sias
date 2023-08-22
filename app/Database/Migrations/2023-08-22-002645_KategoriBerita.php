@@ -26,6 +26,5 @@ class KategoriBerita extends Migration
 
     public function down()
     {
-        $this->forge->dropTable('tbl_kategoriBerita');
     }
 }

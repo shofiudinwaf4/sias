@@ -13,7 +13,7 @@
         <!-- /.card-header -->
         <div class="card-body">
             <h3><?= $berita['judul_berita']; ?></h3>
-            <h5><?= $$berita['kategori']; ?></h5>
+            <h5><?= $$berita['nama_kategori']; ?></h5>
             <img src="<?= base_url('gambar/' . $berita['gambar']); ?>" width="100%" alt="" srcset="">
             <p><?= $berita['isi_berita']; ?></p>
         </div>

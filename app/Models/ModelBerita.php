@@ -10,6 +10,13 @@ class ModelBerita extends Model
     public function AllData()
     {
         return $this->db->table('tbl_berita')
+            ->join('tbl_kategoriBerita', 'tbl_kategoriBerita.id_kategoriBerita=tbl_berita.id_kategoriBerita', 'LEFT')
+            ->orderBy('id_berita', 'ASC')
+            ->get()->getResultArray();
+    }
+    public function Kategori()
+    {
+        return $this->db->table('tbl_kategoriberita')
             ->get()->getResultArray();
     }
     public function AllDataLimit()

@@ -19,13 +19,13 @@
             </div>
             <div class="form-group">
                 <label>Kategori</label>
-                <select class="form-control" name="kategori">
+                <select class="form-control" name="id_kategoriBerita">
                     <option value="">--Pilih Kategori--</option>
-                    <option value="Berita">Berita</option>
-                    <option value="Prestasi">Prestasi</option>
-                    <option value="Kegiatan">Kegiatan</option>
+                    <?php foreach ($kategori as $key => $k) { ?>
+                        <option value="<?= $k['id_kategoriBerita']; ?>"><?= $k['nama_kategori']; ?></option>
+                    <?php } ?>
                 </select>
-                <p class="text-danger"><?= $validasi->getError('kategori'); ?></p>
+                <p class="text-danger"><?= $validasi->getError('id_kategoriBerita'); ?></p>
             </div>
             <div class="form-group">
                 <label>Isi Berita</label>

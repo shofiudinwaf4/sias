@@ -43,7 +43,7 @@
                         <tr>
                             <td class="text-center"><?= $no++; ?></td>
                             <td class="text-center"><?= $value['judul_berita']; ?></td>
-                            <td class="text-center"><?= $value['kategori']; ?></td>
+                            <td class="text-center"><?= $value['nama_kategori']; ?></td>
                             <td><img src="<?= base_url('gambar/' . $value['gambar']); ?>" width="120px" height="100px"></td>
                             <td class="text-center">
                                 <div class="btn-group">
