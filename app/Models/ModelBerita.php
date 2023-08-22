@@ -18,6 +18,12 @@ class ModelBerita extends Model
             ->limit(10)->orderBy('id_berita', 'DESC')
             ->get()->getResultArray();
     }
+    public function DataByKategori($data)
+    {
+        return $this->db->table('tbl_berita')
+            ->orderBy('kategori', $data)
+            ->get()->getResultArray();
+    }
     public function InsertData($data)
     {
         $this->db->table('tbl_berita')->insert($data);

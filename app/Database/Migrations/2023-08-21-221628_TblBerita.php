@@ -9,9 +9,10 @@ class TblBerita extends Migration
     public function up()
     {
         $fields = [
-            'kategori' => [
-                'type' => 'VARCHAR',
-                'constraint' => '100',
+            'id_kategoriBerita' => [
+                'type' => 'INT',
+                'constraint' => '25',
+                'null' => false
             ],
         ];
         $this->forge->addColumn('tbl_berita', $fields);
