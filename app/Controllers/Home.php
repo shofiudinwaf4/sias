@@ -30,6 +30,9 @@ class Home extends BaseController
             'page' => 'v_home',
             'slider' => $this->ModelSlider->AllData(),
             'web' => $this->ModelSekolah->DetailData(),
+            'berita' => $this->ModelBerita->DataLimit(),
+            'pager' => $this->ModelBerita->pager,
+            'beritabaru' => $this->ModelBerita->AllDataLimit3()
         ];
         return view('template_front_end', $data);
     }

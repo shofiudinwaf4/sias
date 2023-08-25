@@ -20,7 +20,20 @@ class Berita extends BaseController
             'menu' => 'Berita',
             'submenu' => 'Berita',
             'page' => 'berita/v_berita',
+            'kategori' => $this->ModelBerita->Kategori(),
             'berita' => $this->ModelBerita->AllData()
+        ];
+        return view('template_admin', $data);
+    }
+    public function KategoriBerita($data)
+    {
+        $data = [
+            'judul' => 'Berita',
+            'subjudul' => 'View Berita',
+            'menu' => 'Berita',
+            'submenu' => '',
+            'page' => 'berita/v_view',
+            'berita' => $this->ModelBerita->DataByKategori($data)
         ];
         return view('template_admin', $data);
     }
@@ -32,6 +45,7 @@ class Berita extends BaseController
             'menu' => 'Berita',
             'submenu' => '',
             'page' => 'berita/v_view',
+            'kategori' => $this->ModelBerita->Kategori($id_berita),
             'berita' => $this->ModelBerita->DetailData($id_berita)
         ];
         return view('template_admin', $data);

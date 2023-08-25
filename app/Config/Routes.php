@@ -107,6 +107,7 @@ $routes->get('berita/editdata/(:segment)', 'Berita::EditData/$1');
 $routes->add('berita/updatedata/(:segment)', 'Berita::UpdateData/$1');
 $routes->get('berita/deletedata/(:segment)', 'Berita::DeleteData/$1');
 $routes->get('berita/view/(:segment)', 'Berita::View/$1');
+$routes->get('berita/kategori/(:segment)', 'Berita::KategoriBerita/$1');
 // auth
 $routes->get('auth', 'Auth');
 $routes->get('login', 'Auth::index');

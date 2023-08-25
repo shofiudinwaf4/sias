@@ -13,8 +13,8 @@
         <!-- /.card-header -->
         <div class="card-body">
             <h3><?= $berita['judul_berita']; ?></h3>
-            <h5><?= $$berita['nama_kategori']; ?></h5>
-            <img src="<?= base_url('gambar/' . $berita['gambar']); ?>" width="100%" alt="" srcset="">
+            <p class="bg-primary color-palette col-sm-1 text-center"><?= $berita['nama_kategori']; ?></p>
+            <img src="<?= base_url('gambar/' . $berita['gambar']); ?>" width="50%" alt="" srcset="">
             <p><?= $berita['isi_berita']; ?></p>
         </div>
 

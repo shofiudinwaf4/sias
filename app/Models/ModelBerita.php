@@ -25,11 +25,21 @@ class ModelBerita extends Model
             ->limit(10)->orderBy('id_berita', 'DESC')
             ->get()->getResultArray();
     }
-    public function DataByKategori($data)
+    public function AllDataLimit3()
     {
         return $this->db->table('tbl_berita')
-            ->orderBy('kategori', $data)
+            ->limit(3)->orderBy('id_berita', 'DESC')
             ->get()->getResultArray();
+    }
+    public function DataLimit()
+    {
+        return $this->db->table('tbl_berita')
+            ->limit(1)->orderBy('id_berita', 'DESC')
+            ->get()->getResultArray();
+    }
+    public function DataByKategori($data)
+    {
+        return $this->db->table('tbl_kategoriberita')->orderBy('id_kategoriberita', 'desc')->get()->getRowArray();
     }
     public function InsertData($data)
     {
@@ -38,6 +48,7 @@ class ModelBerita extends Model
     public function DetailData($id_berita)
     {
         return $this->db->table('tbl_berita')
+            ->join('tbl_kategoriBerita', 'tbl_kategoriBerita.id_kategoriBerita=tbl_berita.id_kategoriBerita', 'LEFT')
             ->where(['id_berita' => $id_berita])
             ->get()->getRowArray();
     }
