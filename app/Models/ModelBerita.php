@@ -25,10 +25,11 @@ class ModelBerita extends Model
             ->limit(10)->orderBy('id_berita', 'DESC')
             ->get()->getResultArray();
     }
-    public function AllDataLimit3()
+    public function AllDataPrestasi()
     {
         return $this->db->table('tbl_berita')
-            ->limit(3)->orderBy('id_berita', 'DESC')
+            ->join('tbl_kategoriBerita', 'tbl_kategoriBerita.id_kategoriBerita=tbl_berita.id_kategoriBerita', 'LEFT')
+            ->limit(5)->orderBy('id_berita', 'DESC')
             ->get()->getResultArray();
     }
     public function DataLimit()

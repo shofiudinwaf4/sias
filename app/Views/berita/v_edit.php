@@ -23,7 +23,7 @@
                 <select class="form-control" name="id_kategoriBerita">
                     <option value="">--Pilih Kategori--</option>
                     <?php foreach ($kategori as $key => $k) { ?>
-                        <option value="<?= $k['id_kategoriBerita']; ?>"><?= $k['nama_kategori']; ?></option>
+                        <option value="<?= $k['id_kategoriBerita']; ?>" <?= $berita['id_kategoriBerita'] == $k['id_kategoriBerita'] ? 'selected' : ''; ?>><?= $k['nama_kategori']; ?></option>
                     <?php } ?>
                 </select>
                 <p class="text-danger"><?= $validasi->getError('id_kategoriBerita'); ?></p>
@@ -72,6 +72,15 @@
         // Summernote
         $('#summernote').summernote({
             height: 200,
+            toolbar: [
+                // [groupName, [list of button]]
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough', 'superscript', 'subscript']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']]
+            ]
         })
 
         // CodeMirror

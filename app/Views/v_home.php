@@ -19,6 +19,7 @@
  </section>
 
  <!--====== SLIDER PART ENDS ======-->
+
  <!--====== CATEGORY PART START ======-->
 
  <section id="category-2-part">
@@ -26,18 +27,18 @@
          <div class="row">
              <div class="col-lg-6">
                  <div class="section-title mt-50">
-                     <h3>Sambutan Kepala Sekolah</h3>
+                     <h3 class="mb-10">Sambutan Kepala Sekolah</h3>
                      <?= $web['sambutan']; ?>
                  </div> <!-- section title -->
              </div>
-             <div class="col-lg-5 offset-lg-1">
+             <div class="col-lg-4 offset-lg-1">
                  <div class="category-form">
                      <div class="form-title text-center">
                          <h3>Selamat Datang</h3>
                          <span><?= $web['nama_sekolah']; ?> </span>
                      </div>
                      <div class="main-form text-center">
-                         <img src="<?= base_url('fotoguru/' . $web['foto_kepsek']); ?>" width="100%">
+                         <img src="<?= base_url('fotoguru/' . $web['foto_kepsek']); ?>" width="60%">
                          <h4><?= $web['kepsek']; ?></h4>
                          <p>Kepala Sekolah</p>
                      </div>
@@ -49,132 +50,113 @@
 
  <!--====== CATEGORY PART ENDS ======-->
 
- <!--====== ABOUT PART START ======-->
+ <!--====== COURSE PART START ======-->
 
- <section id="about-part" class="pt-65">
+ <section id="course-part" class="pt-60">
      <div class="container">
          <div class="row">
-             <div class="col-lg-5">
-                 <div class="section-title mt-50">
-                     <h5>About us</h5>
-                     <h2>Welcome to Edubin </h2>
+             <div class="col-lg-6">
+                 <div class="section-title pb-45">
+                     <h5>Prestasi</h5>
                  </div> <!-- section title -->
-                 <div class="about-cont">
-                     <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris. <br> <br> auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris</p>
-                     <a href="#" class="main-btn mt-55">Learn More</a>
-                 </div>
-             </div> <!-- about cont -->
-             <div class="col-lg-6 offset-lg-1">
-                 <div class="about-event mt-50">
-                     <div class="event-title">
-                         <h3>Upcoming events</h3>
-                     </div> <!-- event title -->
-                     <ul>
-                         <li>
-                             <div class="singel-event">
-                                 <span><i class="fa fa-calendar"></i> 2 December 2018</span>
-                                 <a href="events-singel.html">
-                                     <h4>Campus clean workshop</h4>
-                                 </a>
-                                 <span><i class="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
-                                 <span><i class="fa fa-map-marker"></i> Rc Auditorim</span>
-                             </div>
-                         </li>
-                         <li>
-                             <div class="singel-event">
-                                 <span><i class="fa fa-calendar"></i> 2 December 2018</span>
-                                 <a href="events-singel.html">
-                                     <h4>Tech Summit</h4>
-                                 </a>
-                                 <span><i class="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
-                                 <span><i class="fa fa-map-marker"></i> Rc Auditorim</span>
-                             </div>
-                         </li>
-                         <li>
-                             <div class="singel-event">
-                                 <span><i class="fa fa-calendar"></i> 2 December 2018</span>
-                                 <a href="events-singel.html">
-                                     <h4>Enviroement conference</h4>
-                                 </a>
-                                 <span><i class="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
-                                 <span><i class="fa fa-map-marker"></i> Rc Auditorim</span>
-                             </div>
-                         </li>
-                     </ul>
-                 </div> <!-- about event -->
              </div>
          </div> <!-- row -->
+         <div class="row course-slied mt-10 bg-light">
+             <?php foreach ($prestasi as $key => $p) { ?>
+                 <div class="col-lg-4">
+                     <div class="singel-course-2">
+                         <div class="thum">
+                             <div class="image">
+                                 <img src="<?= base_url('gambar/' . $p['gambar']); ?>" alt="Course">
+                             </div>
+                             <div class="course-teacher">
+                                 <div class="thum">
+                                     <a href="<?= base_url('home/viewberita/' . $p['slug_berita']); ?>">
+                                         <h6 class="text-light bg-dark"><?= $p['judul_berita']; ?></h6>
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div> <!-- singel course -->
+                 </div>
+             <?php } ?>
+         </div> <!-- course slied -->
      </div> <!-- container -->
-     <div class="about-bg">
-         <img src="<?= base_url('edubin'); ?>/images/about/bg-1.png" alt="About">
-     </div>
  </section>
 
- <!--====== ABOUT PART ENDS ======-->
+ <!--====== COURSE PART ENDS ======-->
 
  <!--====== NEWS PART START ======-->
 
- <section id="news-part" class="pt-115 pb-110">
+ <section id="news-part" class="pt-60 pb-60">
      <div class="container">
          <div class="row">
              <div class="col-lg-6">
-                 <div class="section-title pb-50">
-                     <h5>Latest News</h5>
-                     <h2>From the news</h2>
+                 <div class="section-title pb-10">
+                     <h5>Berita Baru</h5>
                  </div> <!-- section title -->
              </div>
          </div> <!-- row -->
          <div class="row">
-             <div class="col-lg-6">
-                 <?php
-                    foreach ($berita as $key => $value) {
-                        $db = \Config\Database::connect();
-                        $user = $db->table('tbl_user')
-                            ->where('id_user', $value['id_user'])
-                            ->get()->getRowArray();
-                    ?>
-                     <div class="singel-news mt-30">
+             <?php
+                foreach ($berita as $key => $value) {
+                    $db = \Config\Database::connect();
+                    $user = $db->table('tbl_user')
+                        ->where('id_user', $value['id_user'])
+                        ->get()->getRowArray();
+                ?>
+                 <div class="col-lg-8 mt-10">
+                     <div class="singel-news">
                          <div class="news-thum pb-25">
-                             <img src="<?= base_url('gambar/' . $value['gambar']); ?>" alt="Blog Details">
+                             <img src="<?= base_url('gambar/' . $value['gambar']); ?>" alt="News">
                          </div>
                          <div class="news-cont">
                              <ul>
-                                 <li><a href="#"><i class="fa fa-calendar"></i><?= date('d-M-Y', strtotime($value['tgl_berita'])); ?> </a></li>
-                                 <li><a href="#"><i class="fa fa-user"></i><?= $user['nama_user']; ?></a></li>
+                                 <li><i class="fa fa-calendar"></i><?= date('d-M-Y', strtotime($value['tgl_berita'])); ?></li>
+                                 <li><?= 'By ' . $user['nama_user']; ?></li>
                              </ul>
                              <a href="<?= base_url('home/viewberita/' . $value['slug_berita']); ?>">
                                  <h3><?= $value['judul_berita']; ?></h3>
                              </a>
                          </div>
                      </div> <!-- singel news -->
-                 <?php
-                    }  ?>
-             </div>
-             <div class="col-lg-6">
-                 <div class="singel-news news-list">
+                 </div>
+             <?php
+                }  ?>
+             <div class="col-lg-4">
+                 <div class="saidbar">
                      <div class="row">
-                         <?php foreach ($beritabaru as $key => $baru) {
-                            ?>
-                             <div class="col-sm-4">
-                                 <div class="news-thum mt-30">
-                                     <img src="<?= base_url('gambar/' . $baru['gambar']); ?>" alt="News">
-                                 </div>
-                             </div>
-                             <div class="col-sm-8">
-                                 <div class="news-cont mt-30">
-                                     <ul>
-                                         <li><a href="#"><i class="fa fa-calendar"></i><?= date('d-M-Y', strtotime($baru['tgl_berita'])); ?></a></li>
-                                     </ul>
-                                     <a href="<?= base_url('home/viewberita/' . $baru['slug_berita']); ?>">
-                                         <h5><?= $baru['judul_berita']; ?></h5>
-                                     </a>
-                                 </div>
-                             </div>
-                         <?php } ?>
+                         <div class="col-lg-12 col-md-6 mt-10">
+                             <div class="saidbar-search">
+                                 <form action="#">
+                                     <input type="text" placeholder="Search">
+                                     <button type="button"><i class="fa fa-search"></i></button>
+                                 </form>
+                             </div> <!-- saidbar search -->
+                         </div> <!-- categories -->
+                         <div class="col-lg-12 col-md-6">
+                             <div class="saidbar-post mt-10">
+                                 <ul>
+                                     <?php foreach ($beritabaru as $key => $baru) {
+                                        ?>
+                                         <li>
+                                             <a href="<?= base_url('home/viewberita/' . $baru['slug_berita']); ?>">
+                                                 <div class="singel-post">
+                                                     <div class="cont">
+                                                         <h6><?= $baru['judul_berita']; ?></h6>
+                                                     </div>
+                                                 </div> <!-- singel post -->
+                                             </a>
+                                         </li>
+                                     <?php } ?>
+                                 </ul>
+                                 </ul>
+                             </div> <!-- saidbar post -->
+                         </div>
                      </div> <!-- row -->
-                 </div> <!-- singel news -->
+                 </div> <!-- saidbar -->
              </div>
-         </div> <!-- row -->
+         </div>
      </div> <!-- container -->
  </section>
 

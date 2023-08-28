@@ -52,7 +52,7 @@ class Setting extends BaseController
             $logo_header = $this->request->getFile('logo_header');
 
             if ($logo_header->getError() == 4) {
-                $nama_file = $logo_header['logo_header'];
+                $nama_file = $sekolah['logo_header'];
             } else {
                 # code...
                 $nama_file = $logo_header->getRandomName();
@@ -94,7 +94,7 @@ class Setting extends BaseController
             $logo_sekolah = $this->request->getFile('logo_sekolah');
 
             if ($logo_sekolah->getError() == 4) {
-                $nama_file = $logo_sekolah['logo_sekolah'];
+                $nama_file = $sekolah['logo_sekolah'];
             } else {
                 # code...
                 $nama_file = $logo_sekolah->getRandomName();
@@ -136,7 +136,7 @@ class Setting extends BaseController
             $logo_dinas = $this->request->getFile('logo_dinas');
 
             if ($logo_dinas->getError() == 4) {
-                $nama_file = $logo_dinas['logo_dinas'];
+                $nama_file = $sekolah['logo_dinas'];
             } else {
                 # code...
                 $nama_file = $logo_dinas->getRandomName();
@@ -273,11 +273,11 @@ class Setting extends BaseController
             ]
 
         ])) {
-            $sambutan = $this->ModelSekolah->DetailData();
+            $sekolah = $this->ModelSekolah->DetailData();
             $foto_kepsek = $this->request->getFile('foto_kepsek');
 
             if ($foto_kepsek->getError() == 4) {
-                $nama_file = $foto_kepsek['foto_kepsek'];
+                $nama_file = $sekolah['foto_kepsek'];
             } else {
                 # code...
                 $nama_file = $foto_kepsek->getRandomName();

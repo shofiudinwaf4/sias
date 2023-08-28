@@ -31,8 +31,9 @@ class Home extends BaseController
             'slider' => $this->ModelSlider->AllData(),
             'web' => $this->ModelSekolah->DetailData(),
             'berita' => $this->ModelBerita->DataLimit(),
+            'prestasi' => $this->ModelBerita->AllDataPrestasi(),
             'pager' => $this->ModelBerita->pager,
-            'beritabaru' => $this->ModelBerita->AllDataLimit3()
+            'beritabaru' => $this->ModelBerita->AllDataLimit(),
         ];
         return view('template_front_end', $data);
     }

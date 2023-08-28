@@ -15,7 +15,7 @@ class ModelSekolah extends Model
     public function UpdateData($data)
     {
         $this->db->table('tbl_sekolah')
-            ->where(['id_sekolah' => $data['id_sekolah']])
+            ->where('id_sekolah', $data['id_sekolah'])
             ->update($data);
     }
 }
