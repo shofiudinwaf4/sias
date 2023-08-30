@@ -104,7 +104,7 @@
                 <div class="col-sm-4">
                     <div class="form-group"> <br>
                         <label>Preview Foto</label><br>
-                        <img src="" id="gambar_load" width="200px">
+                        <img src="/fotoguru/default.jpg" id="gambar_load" width="200px">
                     </div>
                 </div>
             </div>

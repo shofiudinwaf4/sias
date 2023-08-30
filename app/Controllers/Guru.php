@@ -36,7 +36,7 @@ class Guru extends BaseController
     }
     public function InsertData()
     {
-        if (!$this->validate([
+        if ($this->validate([
             'kode_guru' => [
                 'label' => 'Kode Guru',
                 'rules' => 'required|is_unique[tbl_guru.kode_guru]',
@@ -104,18 +104,21 @@ class Guru extends BaseController
             ],
             'foto_guru' => [
                 'label' => 'Foto Guru',
-                'rules' => 'uploaded[foto_guru]|max_size[foto_guru,2048]',
+                'rules' => 'max_size[foto_guru,2048]',
                 'errors' => [
-                    'uploaded' => '{field} Tidak boleh kosong',
                     'max_size' => 'Ukuran {field} Maksimal 2084 KB',
                 ]
             ],
 
         ])) {
-            return redirect()->to('guru/input')->withInput();
-        } else {
             $foto = $this->request->getFile('foto_guru');
-            $nama_file = $foto->getRandomName();
+            if ($foto->getError() == 4) {
+                $nama_file = 'default.jpg';
+            } else {
+                // ambil nama file
+                $nama_file = $foto->getRandomName();
+                $foto->move('fotoguru', $nama_file);
+            }
             $data = [
                 'kode_guru' => $this->request->getPost('kode_guru'),
                 'nik' => $this->request->getPost('nik'),
@@ -129,10 +132,11 @@ class Guru extends BaseController
                 'password' => sha1('12345'),
                 'foto_guru' => $nama_file,
             ];
-            $foto->move('fotoguru', $nama_file);
             $this->ModelGuru->InsertData($data);
             session()->setFlashdata('insert', 'Data berhasil ditambah');
             return redirect()->to('guru');
+        } else {
+            return redirect()->to('guru/input')->withInput();
         }
         // jika valid
 

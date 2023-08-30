@@ -1353,6 +1353,7 @@ p {
   background-color: #fff;
   border-radius: 5px;
   overflow: hidden;
+  margin-top: 0px;
 }
 .singel-course > .thum {
   position: relative;
@@ -1485,12 +1486,12 @@ p {
 }
 .course-slied .slick-arrow {
   position: absolute;
-  top: -125px;
-  right: 0;
+  top: -60px;
+  right: 15px;
 }
 .course-slied .prev.slick-arrow {
   left: auto;
-  right: 50px;
+  right: 65px;
 }
 .course-slied .slick-arrow i {
   width: 40px;
@@ -2121,7 +2122,6 @@ p {
 }
 .singel-course-2 > .thum .image > img {
   border-radius: 5px;
-  padding: 10px;
   width: 100%;
   height: 320px;
 }
@@ -3511,7 +3511,7 @@ p {
 }
 .saidbar .saidbar-post ul li a .singel-post .cont h6 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
   padding-bottom: 10px;
   -webkit-transition: all 0.4s linear;

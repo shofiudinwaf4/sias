@@ -32,6 +32,7 @@ class Home extends BaseController
             'web' => $this->ModelSekolah->DetailData(),
             'berita' => $this->ModelBerita->DataLimit(),
             'prestasi' => $this->ModelBerita->AllDataPrestasi(),
+            'kategori' => $this->ModelBerita->DataByKategori(),
             'pager' => $this->ModelBerita->pager,
             'beritabaru' => $this->ModelBerita->AllDataLimit(),
         ];

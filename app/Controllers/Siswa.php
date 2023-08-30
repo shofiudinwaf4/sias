@@ -103,16 +103,21 @@ class Siswa extends BaseController
             ],
             'foto' => [
                 'label' => 'Foto Siswa',
-                'rules' => 'uploaded[foto]|max_size[foto,2048]',
+                'rules' => 'max_size[foto,2048]',
                 'errors' => [
-                    'uploaded' => '{field} Tidak boleh kosong',
                     'max_size' => 'Ukuran {field} Maksimal 2084 KB',
                 ]
             ],
 
         ])) {
             $foto_siswa = $this->request->getFile('foto');
-            $nama_file = $foto_siswa->getRandomName();
+            if ($foto_siswa->getError() == 4) {
+                $nama_file = 'default.jpg';
+            } else {
+                // ambil nama file
+                $nama_file = $foto_siswa->getRandomName();
+                $foto_siswa->move('fotosiswa', $nama_file);
+            }
             $data = [
                 'nisn' => $this->request->getPost('nisn'),
                 'nama_siswa' => $this->request->getPost('nama_siswa'),
@@ -126,7 +131,6 @@ class Siswa extends BaseController
                 'status' => 1,
                 'foto' => $nama_file,
             ];
-            $foto_siswa->move('fotosiswa', $nama_file);
             $this->ModelSiswa->InsertData($data);
             session()->setFlashdata('insert', 'Data berhasil ditambah');
             return redirect()->to('siswa');

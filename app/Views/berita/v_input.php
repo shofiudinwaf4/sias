@@ -39,7 +39,7 @@
             </div>
             <div class="form-group"> <br>
                 <label>Preview Gambar</label><br>
-                <img src="" id="gambar_load" width="500px">
+                <img src="/Gambar/blank.png" id="gambar_load" width="500px">
             </div>
         </div>
         <div class="card-footer">

@@ -1,5 +1,4 @@
  <!--====== SLIDER PART START ======-->
-
  <section id="slider-part" class="slider-active">
      <?php foreach ($slider as $key => $value) { ?>
          <div class="single-slider bg_cover pt-150" style="background-image: url(<?= base_url('gambar/' . $value['gambar_slider']); ?>" data-overlay="4">
@@ -51,28 +50,27 @@
  <!--====== CATEGORY PART ENDS ======-->
 
  <!--====== COURSE PART START ======-->
-
- <section id="course-part" class="pt-60">
+ <section id="course-part" class="pt-25">
      <div class="container">
          <div class="row">
              <div class="col-lg-6">
-                 <div class="section-title pb-45">
+                 <div class="section-title pb-25">
                      <h5>Prestasi</h5>
                  </div> <!-- section title -->
              </div>
          </div> <!-- row -->
-         <div class="row course-slied mt-10 bg-light">
+         <div class="row course-slied">
              <?php foreach ($prestasi as $key => $p) { ?>
                  <div class="col-lg-4">
                      <div class="singel-course-2">
                          <div class="thum">
-                             <div class="image">
+                             <div class="image bg-light">
                                  <img src="<?= base_url('gambar/' . $p['gambar']); ?>" alt="Course">
                              </div>
                              <div class="course-teacher">
                                  <div class="thum">
                                      <a href="<?= base_url('home/viewberita/' . $p['slug_berita']); ?>">
-                                         <h6 class="text-light bg-dark"><?= $p['judul_berita']; ?></h6>
+                                         <h6 class="text-light"><?= $p['judul_berita']; ?></h6>
                                      </a>
                                  </div>
                              </div>
@@ -88,7 +86,7 @@
 
  <!--====== NEWS PART START ======-->
 
- <section id="news-part" class="pt-60 pb-60">
+ <section id="news-part" class="pt-25 pb-60">
      <div class="container">
          <div class="row">
              <div class="col-lg-6">
@@ -134,6 +132,39 @@
                                  </form>
                              </div> <!-- saidbar search -->
                          </div> <!-- categories -->
+                         <div class="row">
+                             <div class="col ml-15 mt-10">
+                                 <div class="section-title">
+                                     <h5>Kategori</h5>
+                                 </div> <!-- section title -->
+                             </div>
+                         </div> <!-- row -->
+                         <div class="col-lg-12 col-md-6">
+                             <div class="saidbar-post mt-10">
+                                 <ul>
+                                     <?php foreach ($kategori as $key => $kategori) {
+                                        ?>
+                                         <li>
+                                             <a href="<?= base_url('home/viewberita/' . $kategori['nama_kategori']); ?>">
+                                                 <div class="singel-post">
+                                                     <div class="cont">
+                                                         <h6><?= $kategori['nama_kategori']; ?></h6>
+                                                     </div>
+                                                 </div> <!-- singel post -->
+                                             </a>
+                                         </li>
+                                     <?php } ?>
+                                 </ul>
+                                 </ul>
+                             </div> <!-- saidbar post -->
+                         </div>
+                         <div class="row">
+                             <div class="col ml-15 mt-10">
+                                 <div class="section-title">
+                                     <h5>Berita</h5>
+                                 </div> <!-- section title -->
+                             </div>
+                         </div> <!-- row -->
                          <div class="col-lg-12 col-md-6">
                              <div class="saidbar-post mt-10">
                                  <ul>

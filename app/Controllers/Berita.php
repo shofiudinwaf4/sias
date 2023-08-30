@@ -89,16 +89,21 @@ class Berita extends BaseController
             ],
             'gambar' => [
                 'label' => 'Gambar Berita',
-                'rules' => 'uploaded[gambar]|max_size[gambar,2048]',
+                'rules' => 'max_size[gambar,2048]',
                 'errors' => [
-                    'uploaded' => '{field} Tidak boleh kosong',
                     'max_size' => 'Ukuran {field} Maksimal 2084 KB',
                 ]
             ],
 
         ])) {
             $gambar = $this->request->getFile('gambar');
-            $nama_file = $gambar->getRandomName();
+            if ($gambar->getError() == 4) {
+                $nama_file = 'blank.png';
+            } else {
+                // ambil nama file
+                $nama_file = $gambar->getRandomName();
+                $gambar->move('gambar', $nama_file);
+            }
             $data = [
                 'judul_berita' => $this->request->getPost('judul_berita'),
                 'slug_berita' => url_title($this->request->getPost('judul_berita'), '-', true),
@@ -109,7 +114,6 @@ class Berita extends BaseController
                 'jam_berita' => date('H:i:s'),
                 'gambar' => $nama_file,
             ];
-            $gambar->move('gambar', $nama_file);
             $this->ModelBerita->InsertData($data);
             session()->setFlashdata('insert', 'Data berhasil ditambah');
             return redirect()->to('berita');
