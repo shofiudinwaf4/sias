@@ -59,7 +59,7 @@
                  </div> <!-- section title -->
              </div>
          </div> <!-- row -->
-         <div class="row course-slied">
+         <div class="row course-slied ">
              <?php foreach ($prestasi as $key => $p) { ?>
                  <div class="col-lg-4">
                      <div class="singel-course-2">
@@ -121,66 +121,51 @@
                  </div>
              <?php
                 }  ?>
+
              <div class="col-lg-4">
                  <div class="saidbar">
                      <div class="row">
-                         <div class="col-lg-12 col-md-6 mt-10">
-                             <div class="saidbar-search">
+                         <div class="col-lg-12 col-md-6">
+                             <div class="saidbar-search mt-10">
                                  <form action="#">
                                      <input type="text" placeholder="Search">
                                      <button type="button"><i class="fa fa-search"></i></button>
                                  </form>
                              </div> <!-- saidbar search -->
-                         </div> <!-- categories -->
-                         <div class="row">
-                             <div class="col ml-15 mt-10">
-                                 <div class="section-title">
-                                     <h5>Kategori</h5>
-                                 </div> <!-- section title -->
-                             </div>
-                         </div> <!-- row -->
-                         <div class="col-lg-12 col-md-6">
-                             <div class="saidbar-post mt-10">
+                             <div class="categories mt-30">
+                                 <h4>Kategori</h4>
                                  <ul>
-                                     <?php foreach ($kategori as $key => $kategori) {
+                                     <?php foreach ($kategoriBerita as $key => $k) {
                                         ?>
                                          <li>
-                                             <a href="<?= base_url('home/viewberita/' . $kategori['nama_kategori']); ?>">
-                                                 <div class="singel-post">
-                                                     <div class="cont">
-                                                         <h6><?= $kategori['nama_kategori']; ?></h6>
-                                                     </div>
-                                                 </div> <!-- singel post -->
+                                             <a href="<?= base_url('home/viewKategori/' . $k['id_kategoriBerita']); ?>">
+                                                 <?= $k['nama_kategori']; ?>
                                              </a>
                                          </li>
                                      <?php } ?>
                                  </ul>
-                                 </ul>
-                             </div> <!-- saidbar post -->
-                         </div>
-                         <div class="row">
-                             <div class="col ml-15 mt-10">
-                                 <div class="section-title">
-                                     <h5>Berita</h5>
-                                 </div> <!-- section title -->
                              </div>
-                         </div> <!-- row -->
+                         </div> <!-- categories -->
                          <div class="col-lg-12 col-md-6">
-                             <div class="saidbar-post mt-10">
+                             <div class="saidbar-post mt-30">
+                                 <h4>Berita Terbaru</h4>
                                  <ul>
                                      <?php foreach ($beritabaru as $key => $baru) {
                                         ?>
                                          <li>
                                              <a href="<?= base_url('home/viewberita/' . $baru['slug_berita']); ?>">
                                                  <div class="singel-post">
+                                                     <div class="thum">
+                                                         <img src="<?= base_url('gambar/' . $baru['gambar']); ?>" alt="Blog">
+                                                     </div>
                                                      <div class="cont">
                                                          <h6><?= $baru['judul_berita']; ?></h6>
+                                                         <span><?= date('d-M-Y', strtotime($value['tgl_berita'])); ?></span>
                                                      </div>
                                                  </div> <!-- singel post -->
                                              </a>
                                          </li>
                                      <?php } ?>
-                                 </ul>
                                  </ul>
                              </div> <!-- saidbar post -->
                          </div>

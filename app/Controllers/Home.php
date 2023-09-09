@@ -32,7 +32,8 @@ class Home extends BaseController
             'web' => $this->ModelSekolah->DetailData(),
             'berita' => $this->ModelBerita->DataLimit(),
             'prestasi' => $this->ModelBerita->AllDataPrestasi(),
-            'kategori' => $this->ModelBerita->DataByKategori(),
+            'jumlahPrestasi' => $this->ModelBerita->JumlahPrestasi(),
+            'kategoriBerita' => $this->ModelBerita->Kategori(),
             'pager' => $this->ModelBerita->pager,
             'beritabaru' => $this->ModelBerita->AllDataLimit(),
         ];
@@ -44,6 +45,7 @@ class Home extends BaseController
             'judul' => 'Jurusan',
             'subjudul' => '',
             'jurusan' => $this->ModelJurusan->DetailData($id_jurusan),
+            'kategoriBerita' => $this->ModelBerita->Kategori(),
             'page' => 'front-end/v_detail_jurusan'
         ];
         return view('template_front_end', $data);
@@ -54,6 +56,7 @@ class Home extends BaseController
             'judul' => 'Berita',
             'subjudul' => '',
             'page' => 'front-end/v_berita',
+            'kategoriBerita' => $this->ModelBerita->Kategori(),
             'berita' => $this->ModelBerita->paginate(2, 'berita'),
             'pager' => $this->ModelBerita->pager,
             'beritabaru' => $this->ModelBerita->AllDataLimit()
@@ -67,7 +70,22 @@ class Home extends BaseController
             'judul' => 'Berita',
             'subjudul' => 'View Berita',
             'page' => 'front-end/v_view_berita',
+            'kategoriBerita' => $this->ModelBerita->Kategori(),
             'berita' => $this->ModelBerita->ViewBerita($slug_berita),
+            'beritabaru' => $this->ModelBerita->AllDataLimit()
+        ];
+        return view('template_front_end', $data);
+    }
+    public function ViewKategori($kategori)
+    {
+        $kategori1 = $this->ModelBerita->DataByKategori($kategori);
+        $data = [
+            'judul' => 'Berita',
+            'subjudul' => 'View Berita',
+            'page' => 'front-end/v_kategoriberita',
+            'kategoriBerita' => $this->ModelBerita->Kategori(),
+            'kategori' => $kategori1->paginate(2, 'kategori'),
+            'pager' => $this->ModelBerita->pager,
             'beritabaru' => $this->ModelBerita->AllDataLimit()
         ];
         return view('template_front_end', $data);
@@ -78,7 +96,8 @@ class Home extends BaseController
             'judul' => 'Daftar Guru',
             'subjudul' => '',
             'page' => 'front-end/v_guru',
-            'guru' => $this->ModelGuru->paginate(10, 'guru'),
+            'kategoriBerita' => $this->ModelBerita->Kategori(),
+            'guru' => $this->ModelGuru->paginate(12, 'guru'),
             'pager' => $this->ModelGuru->pager,
 
         ];
@@ -90,6 +109,7 @@ class Home extends BaseController
             'judul' => 'Download',
             'subjudul' => '',
             'page' => 'front-end/v_download',
+            'kategoriBerita' => $this->ModelBerita->Kategori(),
             'download' => $this->ModelDownload->paginate(10, 'download'),
             'pager' => $this->ModelDownload->pager,
 
@@ -102,6 +122,7 @@ class Home extends BaseController
             'judul' => 'Sejarah',
             'subjudul' => '',
             'page' => 'front-end/v_sejarah',
+            'kategoriBerita' => $this->ModelBerita->Kategori(),
             'sejarah' => $this->ModelSekolah->DetailData()
         ];
         return view('template_front_end', $data);
@@ -112,6 +133,7 @@ class Home extends BaseController
             'judul' => 'Visi dan Misi',
             'subjudul' => '',
             'page' => 'front-end/v_visimisi',
+            'kategoriBerita' => $this->ModelBerita->Kategori(),
             'visimisi' => $this->ModelSekolah->DetailData()
         ];
         return view('template_front_end', $data);
@@ -122,6 +144,7 @@ class Home extends BaseController
             'judul' => 'sambutan',
             'subjudul' => '',
             'page' => 'front-end/v_sambutan',
+            'kategoriBerita' => $this->ModelBerita->Kategori(),
             'sambutan' => $this->ModelSekolah->DetailData()
         ];
         return view('template_front_end', $data);

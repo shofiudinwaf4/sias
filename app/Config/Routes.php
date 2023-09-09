@@ -46,6 +46,7 @@ $routes->get('home/download', 'Home::Download');
 $routes->get('home/sejarah', 'Home::Sejarah');
 $routes->get('home/visimisi', 'Home::Visimisi');
 $routes->get('home/sambutan', 'Home::Sambutan');
+$routes->get('home/viewKategori/(:segment)', 'Home::ViewKategori/$1');
 // dashboard
 $routes->get('dashboard', 'Dashboard::index');
 // jurusan

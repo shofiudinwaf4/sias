@@ -1599,6 +1599,7 @@ p {
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
   width: 100%;
+  height: 250px;
 }
 .singel-teachers:hover .image img {
   -webkit-transform: scale(1.1);
@@ -3487,6 +3488,7 @@ p {
   padding: 10px 10px 10px;
   background-color: #fff;
   border-radius: 5px;
+  max-width: 100%;
 }
 
 .saidbar .saidbar-post ul {
@@ -3505,6 +3507,8 @@ p {
 }
 .saidbar .saidbar-post ul li a .singel-post .thum img {
   border-radius: 5px;
+  height: 50px;
+  width: 50px;
 }
 
 .saidbar .saidbar-post ul li a .singel-post .cont {

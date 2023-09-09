@@ -7,6 +7,8 @@ use CodeIgniter\Model;
 class ModelBerita extends Model
 {
     protected $table = 'tbl_berita';
+    protected $tableKategori = 'tbl_kategori';
+
     public function AllData()
     {
         return $this->db->table('tbl_berita')
@@ -17,13 +19,14 @@ class ModelBerita extends Model
     public function Kategori()
     {
         return $this->db->table('tbl_kategoriberita')
+            ->orderBy('id_kategoriberita', 'desc')
             ->get()->getResultArray();
     }
     public function AllDataLimit()
     {
         return $this->db->table('tbl_berita')
             ->orderBy('id_berita', 'DESC')
-            ->get(10)->getResultArray();
+            ->get(5)->getResultArray();
     }
     public function AllDataPrestasi()
     {
@@ -32,15 +35,23 @@ class ModelBerita extends Model
             ->where(['id_kategoriBerita' => 2])
             ->get()->getResultArray();
     }
+    public function JumlahPrestasi()
+    {
+        return $this->db->table('tbl_berita')
+            ->where(['id_kategoriBerita' => 2])
+            ->countAllResults();
+    }
     public function DataLimit()
     {
         return $this->db->table('tbl_berita')
             ->limit(1)->orderBy('id_berita', 'DESC')
             ->get()->getResultArray();
     }
-    public function DataByKategori()
+    public function DataByKategori($kategori)
     {
-        return $this->db->table('tbl_kategoriberita')->orderBy('id_kategoriberita', 'desc')->get()->getResultArray();
+        return $this->table('tbl_berita')
+            ->orderBy('id_berita', 'DESC')
+            ->where('id_kategoriBerita', $kategori);
     }
     public function InsertData($data)
     {

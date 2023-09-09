@@ -170,17 +170,12 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="teachers.html">Siswa</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="teachers.html">teachers</a></li>
-                                            <li><a href="teachers-singel.html">teacher Singel</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
                                         <a href="<?= base_url('home/berita'); ?>">Berita</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="shop.html">Event</a>
+                                        <ul class="sub-menu">
+                                            <?php foreach ($kategoriBerita as $key => $value) { ?>
+                                                <li><a href="<?= base_url('home/viewKategori/' . $value['id_kategoriBerita']); ?>"><?= $value['nama_kategori']; ?></a></li>
+                                            <?php }; ?>
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a href="<?= base_url('home/download'); ?>">Download</a>
