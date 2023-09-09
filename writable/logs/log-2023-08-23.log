@@ -1,0 +1,26 @@
+CRITICAL - 2023-08-23 06:10:14 --> syntax error, unexpected token "public", expecting ";" or "{"
+in APPPATH\Controllers\Berita.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Berita.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Berita')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Berita')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Berita', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-23 06:10:29 --> Undefined variable $kategori
+in APPPATH\Views\berita\v_berita.php on line 33.
+ 1 APPPATH\Views\berita\v_berita.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategori', 'APPPATH\\Views\\berita\\v_berita.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\berita\\v_berita.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('berita/v_berita', [], true)
+ 5 APPPATH\Views\template_admin.php(310): view('berita/v_berita')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 9 APPPATH\Controllers\Berita.php(25): view('template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Berita->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

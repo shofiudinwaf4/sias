@@ -1,0 +1,549 @@
+ERROR - 2023-08-25 05:17:36 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'sias', 3306, '', 0)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\project\sias\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\project\sias\vendor\codeigniter4\framework\system\BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 D:\project\sias\app\Controllers\Home.php(79): CodeIgniter\BaseModel->paginate(10, 'guru')
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->Guru()
+#8 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 D:\project\sias\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 D:\project\sias\vendor\codeigniter4\framework\system\BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#5 D:\project\sias\app\Controllers\Home.php(79): CodeIgniter\BaseModel->paginate(10, 'guru')
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->Guru()
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#11 {main}
+CRITICAL - 2023-08-25 05:17:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_guru`', [], false)
+ 3 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Home.php(79): CodeIgniter\BaseModel->paginate(10, 'guru')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->Guru()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-25 05:17:41 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'sias', 3306, '', 0)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\sias\app\Models\ModelSekolah.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\sias\app\Controllers\Auth.php(23): App\Models\ModelSekolah->DetailData()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Auth->index()
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\project\sias\app\Models\ModelSekolah.php(13): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\project\sias\app\Controllers\Auth.php(23): App\Models\ModelSekolah->DetailData()
+#5 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Auth->index()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#10 {main}
+CRITICAL - 2023-08-25 05:17:41 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_sekolah`
+WHERE `id_sekolah` = :id_sekolah:', [...], false)
+ 3 APPPATH\Models\ModelSekolah.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(23): App\Models\ModelSekolah->DetailData()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 05:32:12 --> Undefined array key "tgl_berita"
+in APPPATH\Views\v_home.php on line 143.
+ 1 APPPATH\Views\v_home.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_berita"', 'APPPATH\\Views\\v_home.php', 143)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 05:42:24 --> Call to undefined function word_limiter()
+in APPPATH\Views\v_home.php on line 135.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 4 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 8 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 05:43:02 --> Call to undefined function word_limiter()
+in APPPATH\Views\v_home.php on line 135.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 4 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 8 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 05:47:04 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Home.php on line 37.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-25 06:18:34 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'sias', 3306, '', 0)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\sias\app\Models\ModelSekolah.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\sias\app\Controllers\Auth.php(23): App\Models\ModelSekolah->DetailData()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Auth->index()
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\project\sias\app\Models\ModelSekolah.php(13): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\project\sias\app\Controllers\Auth.php(23): App\Models\ModelSekolah->DetailData()
+#5 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Auth->index()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#10 {main}
+CRITICAL - 2023-08-25 06:18:34 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_sekolah`
+WHERE `id_sekolah` = :id_sekolah:', [...], false)
+ 3 APPPATH\Models\ModelSekolah.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(23): App\Models\ModelSekolah->DetailData()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-25 06:18:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'sias', 3306, '', 0)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\sias\app\Models\ModelSlider.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\sias\app\Controllers\Home.php(31): App\Models\ModelSlider->AllData()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\project\sias\app\Models\ModelSlider.php(13): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\project\sias\app\Controllers\Home.php(31): App\Models\ModelSlider->AllData()
+#5 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#10 {main}
+CRITICAL - 2023-08-25 06:18:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_slider`', [], false)
+ 3 APPPATH\Models\ModelSlider.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(31): App\Models\ModelSlider->AllData()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-25 06:19:30 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'sias', 3306, '', 0)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\sias\app\Models\ModelSlider.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\sias\app\Controllers\Home.php(31): App\Models\ModelSlider->AllData()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\project\sias\app\Models\ModelSlider.php(13): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\project\sias\app\Controllers\Home.php(31): App\Models\ModelSlider->AllData()
+#5 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#10 {main}
+CRITICAL - 2023-08-25 06:19:30 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_slider`', [], false)
+ 3 APPPATH\Models\ModelSlider.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(31): App\Models\ModelSlider->AllData()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 06:34:36 --> Undefined array key "nama_user"
+in APPPATH\Views\v_home.php on line 151.
+ 1 APPPATH\Views\v_home.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_user"', 'APPPATH\\Views\\v_home.php', 151)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 06:48:57 --> Undefined array key "nama_user"
+in APPPATH\Views\v_home.php on line 167.
+ 1 APPPATH\Views\v_home.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_user"', 'APPPATH\\Views\\v_home.php', 167)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 09:57:20 --> Undefined array key "gambar"
+in APPPATH\Views\v_home.php on line 189.
+ 1 APPPATH\Views\v_home.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gambar"', 'APPPATH\\Views\\v_home.php', 189)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 09:59:04 --> Call to a member function links() on null
+in APPPATH\Views\v_home.php on line 214.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 4 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 8 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 10:04:04 --> Undefined array key "isi_berita"
+in APPPATH\Views\v_home.php on line 63.
+ 1 APPPATH\Views\v_home.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isi_berita"', 'APPPATH\\Views\\v_home.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 10:07:58 --> substr(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH\Controllers\Home.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'substr(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 36)
+ 2 APPPATH\Controllers\Home.php(36): substr(null, 0, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 10:08:23 --> substr(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\Home.php on line 36.
+ 1 APPPATH\Controllers\Home.php(36): substr([...], 0, 100)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 10:08:34 --> substr(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\Home.php on line 36.
+ 1 APPPATH\Controllers\Home.php(36): substr([...], 0, 100)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 10:09:45 --> Undefined variable $isiberita
+in APPPATH\Views\v_home.php on line 151.
+ 1 APPPATH\Views\v_home.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isiberita', 'APPPATH\\Views\\v_home.php', 151)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-25 10:59:53 --> mysqli_sql_exception: Column 'id_kategoriberita' in where clause is ambiguous in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\sias\app\Models\ModelBerita.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\sias\app\Controllers\Home.php(35): App\Models\ModelBerita->AllDataLimit3()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#11 {main}
+CRITICAL - 2023-08-25 10:59:53 --> Column 'id_kategoriberita' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriberita` = \'berita\'
+ORDER BY `id_berita` DESC
+ LIMIT 4', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriberita` = \'berita\'
+ORDER BY `id_berita` DESC
+ LIMIT 4')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriberita` = \'berita\'
+ORDER BY `id_berita` DESC
+ LIMIT 4')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriberita` = :id_kategoriberita:
+ORDER BY `id_berita` DESC
+ LIMIT 4', [...], false)
+ 5 APPPATH\Models\ModelBerita.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(35): App\Models\ModelBerita->AllDataLimit3()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-25 11:00:09 --> mysqli_sql_exception: Column 'id_kategoriberita' in where clause is ambiguous in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\sias\app\Models\ModelBerita.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\sias\app\Controllers\Home.php(35): App\Models\ModelBerita->AllDataLimit3()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#11 {main}
+CRITICAL - 2023-08-25 11:00:09 --> Column 'id_kategoriberita' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriberita` = 1
+ORDER BY `id_berita` DESC
+ LIMIT 4', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriberita` = 1
+ORDER BY `id_berita` DESC
+ LIMIT 4')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriberita` = 1
+ORDER BY `id_berita` DESC
+ LIMIT 4')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriberita` = :id_kategoriberita:
+ORDER BY `id_berita` DESC
+ LIMIT 4', [...], false)
+ 5 APPPATH\Models\ModelBerita.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(35): App\Models\ModelBerita->AllDataLimit3()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 11:27:45 --> Cannot access offset of type string on string
+in APPPATH\Views\v_home.php on line 175.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 4 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 8 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 11:27:56 --> Cannot access offset of type string on string
+in APPPATH\Views\v_home.php on line 175.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 4 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 8 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 11:28:12 --> Cannot access offset of type string on string
+in APPPATH\Views\v_home.php on line 175.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 4 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 8 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 11:32:44 --> Call to a member function dataSeek() on array
+in APPPATH\Controllers\Home.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 11:34:11 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\Home.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-25 11:34:30 --> Call to a member function dataSeek() on array
+in APPPATH\Controllers\Home.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,326 @@
+CRITICAL - 2023-08-28 05:29:08 --> Undefined variable $isi_berita
+in APPPATH\Views\v_home.php on line 156.
+ 1 APPPATH\Views\v_home.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isi_berita', 'APPPATH\\Views\\v_home.php', 156)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 06:31:07 --> Undefined array key "id_kategori"
+in APPPATH\Views\berita\v_edit.php on line 26.
+ 1 APPPATH\Views\berita\v_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kategori"', 'APPPATH\\Views\\berita\\v_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\berita\\v_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('berita/v_edit', [], true)
+ 5 APPPATH\Views\template_admin.php(310): view('berita/v_edit')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 9 APPPATH\Controllers\Berita.php(133): view('template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Berita->EditData('7')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 06:31:42 --> Undefined array key "id_kategori"
+in APPPATH\Views\berita\v_edit.php on line 26.
+ 1 APPPATH\Views\berita\v_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kategori"', 'APPPATH\\Views\\berita\\v_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\berita\\v_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('berita/v_edit', [], true)
+ 5 APPPATH\Views\template_admin.php(310): view('berita/v_edit')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_admin.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_admin', [], true)
+ 9 APPPATH\Controllers\Berita.php(133): view('template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Berita->EditData('7')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 07:40:51 --> Undefined array key "user"
+in APPPATH\Views\v_home.php on line 120.
+ 1 APPPATH\Views\v_home.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'APPPATH\\Views\\v_home.php', 120)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 12:46:22 --> Class "Str" not found
+in APPPATH\Views\v_home.php on line 125.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 4 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 8 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 13:29:39 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\Setting.php on line 280.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->UpdateSambutan()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 13:32:27 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\Setting.php on line 280.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->UpdateSambutan()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 13:36:33 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\Setting.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->UpdateLogoHeader()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 13:41:58 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\Setting.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->UpdateLogoHeader()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 13:50:05 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\Setting.php on line 280.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->UpdateSambutan()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 13:51:44 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+in APPPATH\Controllers\Setting.php on line 280.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Setting->UpdateSambutan()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 14:26:51 --> Undefined array key "nama_kategoriBerita"
+in APPPATH\Views\v_home.php on line 153.
+ 1 APPPATH\Views\v_home.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kategoriBerita"', 'APPPATH\\Views\\v_home.php', 153)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 14:27:37 --> Undefined array key "nama_kategori"
+in APPPATH\Views\v_home.php on line 153.
+ 1 APPPATH\Views\v_home.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kategori"', 'APPPATH\\Views\\v_home.php', 153)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(37): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 15:07:39 --> Undefined variable $prestasi
+in APPPATH\Views\v_home.php on line 66.
+ 1 APPPATH\Views\v_home.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prestasi', 'APPPATH\\Views\\v_home.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(38): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-28 15:12:46 --> mysqli_sql_exception: Column 'id_kategoriberita' in where clause is ambiguous in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\sias\app\Models\ModelBerita.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\sias\app\Controllers\Home.php(34): App\Models\ModelBerita->AllDataPrestasi()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#11 {main}
+CRITICAL - 2023-08-28 15:12:46 --> Column 'id_kategoriberita' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriberita` = 2
+ORDER BY `id_berita` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriberita` = 2
+ORDER BY `id_berita` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriberita` = 2
+ORDER BY `id_berita` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriberita` = :id_kategoriberita:
+ORDER BY `id_berita` DESC
+ LIMIT 5', [...], false)
+ 5 APPPATH\Models\ModelBerita.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(34): App\Models\ModelBerita->AllDataPrestasi()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-28 15:13:08 --> mysqli_sql_exception: Column 'id_kategoriBerita' in where clause is ambiguous in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\sias\app\Models\ModelBerita.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\sias\app\Controllers\Home.php(34): App\Models\ModelBerita->AllDataPrestasi()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#11 {main}
+CRITICAL - 2023-08-28 15:13:08 --> Column 'id_kategoriBerita' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriBerita` = 2
+ORDER BY `id_berita` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriBerita` = 2
+ORDER BY `id_berita` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriBerita` = 2
+ORDER BY `id_berita` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriBerita` = :id_kategoriBerita:
+ORDER BY `id_berita` DESC
+ LIMIT 5', [...], false)
+ 5 APPPATH\Models\ModelBerita.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(34): App\Models\ModelBerita->AllDataPrestasi()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-28 15:16:25 --> mysqli_sql_exception: Column 'id_kategoriBerita' in where clause is ambiguous in D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\project\sias\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\sias\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\sias\app\Models\ModelBerita.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\sias\app\Controllers\Home.php(34): App\Models\ModelBerita->AllDataPrestasi()
+#6 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#7 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\project\sias\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\sias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\sias\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\project\\sias...')
+#11 {main}
+CRITICAL - 2023-08-28 15:16:25 --> Column 'id_kategoriBerita' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriBerita` = 2
+ORDER BY `id_berita` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriBerita` = 2
+ORDER BY `id_berita` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriBerita` = 2
+ORDER BY `id_berita` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_berita`
+LEFT JOIN `tbl_kategoriBerita` ON `tbl_kategoriBerita`.`id_kategoriBerita`=`tbl_berita`.`id_kategoriBerita`
+WHERE `id_kategoriBerita` = :id_kategoriBerita:
+ORDER BY `id_berita` DESC
+ LIMIT 5', [...], false)
+ 5 APPPATH\Models\ModelBerita.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(34): App\Models\ModelBerita->AllDataPrestasi()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-28 15:20:37 --> Undefined array key "nama_berita"
+in APPPATH\Views\v_home.php on line 71.
+ 1 APPPATH\Views\v_home.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_berita"', 'APPPATH\\Views\\v_home.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(216): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(38): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
