@@ -1,0 +1,16 @@
+CRITICAL - 2023-09-12 08:33:49 --> Undefined array key "tgl_berita"
+in APPPATH\Views\v_home.php on line 67.
+ 1 APPPATH\Views\v_home.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_berita"', 'APPPATH\\Views\\v_home.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\template_front_end.php(211): view('v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template_front_end.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template_front_end', [], true)
+ 9 APPPATH\Controllers\Home.php(40): view('template_front_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

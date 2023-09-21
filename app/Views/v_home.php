@@ -49,6 +49,40 @@
 
  <!--====== CATEGORY PART ENDS ======-->
 
+ <!--====== EVENT 2 PART START ======-->
+
+ <section id="event-part" class="pt-50">
+     <div class="container">
+         <div class="event-bg bg-cover " style="background-image: url(<?= base_url('edubin'); ?>/images/bg-3.jpg)">
+             <div class="row">
+                 <div class="col-lg-5 offset-lg-6 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                     <div class="event-2 pt-30 pb-70">
+                         <div class="event-title">
+                             <h3>Kegiatan yang akan datang</h3>
+                         </div> <!-- event title -->
+                         <ul>
+                             <?php foreach ($kegiatan as $key => $k) { ?>
+                                 <li>
+                                     <div class="singel-event">
+                                         <span><i class="fa fa-calendar"> <?= date('d-M-Y', strtotime($k['tgl_berita'])); ?></i></span>
+                                         <a href="events-singel.html">
+                                             <a href="<?= base_url('home/viewberita/' . $k['slug_berita']); ?>">
+                                                 <h4 class="text-light"><?= $k['judul_berita']; ?></h4>
+                                             </a>
+                                         </a>
+                                     </div>
+                                 </li>
+                             <?php } ?>
+                         </ul>
+                     </div> <!-- event 2 -->
+                 </div>
+             </div> <!-- row -->
+         </div>
+     </div> <!-- container -->
+ </section>
+
+ <!--====== EVENT 2 PART ENDS ======-->
+
  <!--====== COURSE PART START ======-->
  <section id="course-part" class="pt-25">
      <div class="container">
@@ -86,12 +120,12 @@
 
  <!--====== NEWS PART START ======-->
 
- <section id="news-part" class="pt-25 pb-60">
+ <section id="news-part" class="pt-25 pb-20">
      <div class="container">
          <div class="row">
              <div class="col-lg-6">
                  <div class="section-title pb-10">
-                     <h5>Berita Baru</h5>
+                     <h5>Pengumuman</h5>
                  </div> <!-- section title -->
              </div>
          </div> <!-- row -->
@@ -160,7 +194,7 @@
                                                      </div>
                                                      <div class="cont">
                                                          <h6><?= $baru['judul_berita']; ?></h6>
-                                                         <span><?= date('d-M-Y', strtotime($value['tgl_berita'])); ?></span>
+                                                         <span><?= date('d-M-Y', strtotime($baru['tgl_berita'])); ?></span>
                                                      </div>
                                                  </div> <!-- singel post -->
                                              </a>

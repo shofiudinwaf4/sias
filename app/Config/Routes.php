@@ -100,6 +100,9 @@ $routes->get('download/editdata/(:segment)', 'Download::EditData/$1');
 $routes->add('download/updatedata/(:segment)', 'Download::UpdateData/$1');
 $routes->get('download/deletedata/(:segment)', 'Download::DeleteData/$1');
 
+// galeri
+$routes->get('galeri', 'Galeri::index');
+
 // berita
 $routes->get('berita', 'Berita::index');
 $routes->get('berita/input', 'Berita::Input');

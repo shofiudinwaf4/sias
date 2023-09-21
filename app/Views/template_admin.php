@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="<?= base_url('AdminLTE'); ?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="<?= base_url('AdminLTE'); ?>/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="<?= base_url('AdminLTE'); ?>/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <!-- custom css -->
+    <link rel=" stylesheet" href="<?= base_url('AdminLTE'); ?>/dist/css/customstyle.css">
 
     <!-- jQuery -->
     <script src="<?= base_url('AdminLTE'); ?>/plugins/jquery/jquery.min.js"></script>
@@ -86,6 +88,9 @@
     <script src="<?= base_url('AdminLTE'); ?>/plugins/summernote/summernote-bs4.min.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="<?= base_url('AdminLTE'); ?>/dist/js/pages/dashboard.js"></script>
+    <!-- custom js -->
+    <script src="<?= base_url('AdminLTE'); ?>/dist/js/mycustom.js"></script>
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -179,43 +184,43 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="<?= base_url('jurusan'); ?>" class="nav-link <?= $submenu == 'jurusan' ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('jurusan'); ?>" class="nav-link <?= $submenu == 'Jurusan' ? 'active' : ''; ?>">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Jurusan</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?= base_url('kelas'); ?>" class="nav-link <?= $submenu == 'kelas' ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('kelas'); ?>" class="nav-link <?= $submenu == 'Kelas' ? 'active' : ''; ?>">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Kelas</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?= base_url('mapel'); ?>" class="nav-link <?= $submenu == 'mapel' ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('mapel'); ?>" class="nav-link <?= $submenu == 'Mapel' ? 'active' : ''; ?>">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Mata Pelajaran</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?= base_url('guru'); ?>" class="nav-link <?= $submenu == 'guru' ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('guru'); ?>" class="nav-link <?= $submenu == 'Guru' ? 'active' : ''; ?>">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Guru</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?= base_url('siswa'); ?>" class="nav-link <?= $submenu == 'siswa' ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('siswa'); ?>" class="nav-link <?= $submenu == 'Siswa' ? 'active' : ''; ?>">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Siswa</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?= base_url('ta'); ?>" class="nav-link <?= $submenu == 'ta' ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('ta'); ?>" class="nav-link <?= $submenu == 'Ta' ? 'active' : ''; ?>">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tahun Ajaran</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?= base_url('user'); ?>" class="nav-link <?= $submenu == 'user' ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('user'); ?>" class="nav-link <?= $submenu == 'User' ? 'active' : ''; ?>">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>User</p>
                                     </a>
@@ -233,6 +238,13 @@
                                 <i class="nav-icon fas fa-download"></i>
                                 <p>
                                     Download </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('galeri'); ?>" class="nav-link <?= $menu == 'Galeri' ? 'active' : '' ?>">
+                                <i class="nav-icon fas fa-photo-video"></i>
+                                <p>
+                                    Galeri </p>
                             </a>
                         </li>
 

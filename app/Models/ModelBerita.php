@@ -35,11 +35,19 @@ class ModelBerita extends Model
             ->where(['id_kategoriBerita' => 2])
             ->get()->getResultArray();
     }
-    public function JumlahPrestasi()
+    public function AllDataPengumuman()
     {
         return $this->db->table('tbl_berita')
-            ->where(['id_kategoriBerita' => 2])
-            ->countAllResults();
+            ->limit(1)->orderBy('id_berita', 'DESC')
+            ->where(['id_kategoriBerita' => 1])
+            ->get()->getResultArray();
+    }
+    public function AllDataKegiatan()
+    {
+        return $this->db->table('tbl_berita')
+            ->limit(3)->orderBy('id_berita', 'DESC')
+            ->where(['id_kategoriBerita' => 3])
+            ->get()->getResultArray();
     }
     public function DataLimit()
     {
